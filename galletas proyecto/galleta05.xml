@@ -1,0 +1,26 @@
+<annotation>
+	<folder>galletas proyecto</folder>
+	<filename>galleta05.jpg</filename>
+	<path>C:\Users\Adrián\PycharmProjects\proyectogalletas\galletas proyecto\galleta05.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>4000</width>
+		<height>3000</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Galleta_rota</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1265</xmin>
+			<ymin>572</ymin>
+			<xmax>3252</xmax>
+			<ymax>2544</ymax>
+		</bndbox>
+	</object>
+</annotation>
