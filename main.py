@@ -5,7 +5,13 @@ from detecto.core import Model
 from torchvision import transforms
 from detecto.visualize import detect_video
 import matplotlib.pyplot as plt
+import click
 
+@click.group()
+def cli():
+    pass
+
+#Funcion sobreescrita para probar sobre detecto
 def detect_live2(model,score_filter=0.6):
     errores = 0
     cv2.namedWindow('Detecto')
@@ -60,6 +66,7 @@ def detect_live2(model,score_filter=0.6):
 
 detect_live = detect_live2
 
+@cli.command(help="Funcion que entrena y genera un modelo de deteccion de galletas")
 def train_model():
 
     print("Entrenando modelo")
@@ -84,6 +91,7 @@ def train_model():
     model.save("modelo.pth")
     print('Modelo creado y guardado')
 
+@cli.command(help='Funcion que utiliza un modelo generado para probar con un video')
 def use_model():
     print('Usando modelo para probar')
     model = Model.load('modelo.pth', ['Galleta', 'Galleta_rota'])
@@ -92,8 +100,7 @@ def use_model():
     print("Final del analisis")
 
 if __name__ == '__main__':
+    cli()
 
-    train_model()
-    #use_model()
 
 
