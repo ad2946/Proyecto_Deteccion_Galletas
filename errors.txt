@@ -1,0 +1,11 @@
+Error detectado:2022-07-18 19:36:24.301410
+Error detectado:2022-07-18 19:36:29.863329
+Error detectado:2022-07-19 00:54:13.749001
+Error detectado:2022-07-19 00:56:43.992256
+Error detectado:2022-07-19 00:56:45.018512
+Error detectado:2022-07-19 01:00:48.746298
+Error detectado:2022-07-19 01:05:03.125668
+Error detectado:2022-07-19 01:10:18.262785
+Error detectado:2022-07-19 01:15:17.649250
+Error detectado:2022-07-19 01:15:54.092500
+Error detectado:2022-07-19 01:15:58.475778

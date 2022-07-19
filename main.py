@@ -83,11 +83,11 @@ def train_model():
     labels = ['Galleta', 'Galleta_rota']
     model = Model(labels)
     model.fit(dataset, verbose=True)
-    val_dataset = Dataset('val_dataset')
-    losses = model.fit(dataset, val_dataset, epochs=15, learning_rate=0.01,
-                       gamma=0.2, lr_step_size=5, verbose=True)
-    plt.plot(losses)
-    plt.show()
+    #val_dataset = Dataset('val_dataset')
+    #losses = model.fit(dataset, val_dataset, epochs=15, learning_rate=0.01,
+    #                   gamma=0.2, lr_step_size=5, verbose=True)
+    #plt.plot(losses)
+    #plt.show()
     model.save("modelo.pth")
     print('Modelo creado y guardado')
 
